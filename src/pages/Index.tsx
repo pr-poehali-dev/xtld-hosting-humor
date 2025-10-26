@@ -28,7 +28,7 @@ const Index = () => {
       <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="text-2xl font-black text-primary glitch">X-TLD</span>
+            <span className="text-2xl font-black text-primary glitch">XTLD.RU</span>
             <span className="text-xs text-destructive font-bold">BETA∞</span>
           </div>
           <div className="hidden md:flex gap-6">
@@ -47,11 +47,11 @@ const Index = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-black mb-6 glitch">
-            X-TLD.RU
+            XTLD.RU
           </h1>
           
           <p className="text-xl md:text-2xl mb-4 text-muted-foreground max-w-3xl mx-auto">
-            Хостинг <span className="text-primary font-bold">по-братски</span> из говна и палок
+            Хостинг <span className="text-primary font-bold">по-братски</span> на подручных средствах
           </p>
 
           <div className="max-w-2xl mx-auto space-y-4 mb-12">
@@ -112,9 +112,9 @@ const Index = () => {
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-black mb-4">
-              История создания <span className="text-destructive">из говна и палок</span>
+              История создания <span className="text-destructive">под столом</span>
             </h2>
-            <p className="text-xl text-muted-foreground">Как мы докатились до жизни такой</p>
+            <p className="text-xl text-muted-foreground">Один человек, железо из 2012 года, и много упорства</p>
           </div>
 
           <div className="space-y-8">
@@ -125,10 +125,10 @@ const Index = () => {
                     <span className="text-2xl">🍺</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-xl mb-2">2023: Всё началось с пива</h3>
+                    <h3 className="font-bold text-xl mb-2">2012: Начало пути</h3>
                     <p className="text-muted-foreground">
-                      Трое друзей в баре решили: «А давайте сделаем хостинг!». На салфетке нарисовали архитектуру. 
-                      Салфетку потеряли, но идея осталась.
+                      Один энтузиаст решил: «Зачем платить за хостинг, если есть старый десктоп?». 
+                      Десктоп на Intel i3-2120 2012 года нашёл своё призвание.
                     </p>
                   </div>
                 </div>
@@ -142,10 +142,10 @@ const Index = () => {
                     <span className="text-2xl">💻</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-xl mb-2">Первый сервер: ноутбук Васи</h3>
+                    <h3 className="font-bold text-xl mb-2">Первый сервер: i3-2120</h3>
                     <p className="text-muted-foreground">
-                      Инфраструктура стартовала на Dell Inspiron 2014 года. Охлаждение — настольный вентилятор. 
-                      DNS крутился в Docker на Raspberry Pi. Работало 3 дня, пока кот не выдернул провод.
+                      Десктоп под столом. Никакого дата-центра — только комната и вентилятор. 
+                      Работал круглосуточно. Отключения света — единственный враг.
                     </p>
                   </div>
                 </div>
@@ -159,10 +159,10 @@ const Index = () => {
                     <span className="text-2xl">🔥</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-xl mb-2">Первый инцидент: The Great Reboot</h3>
+                    <h3 className="font-bold text-xl mb-2">Апгрейд 2017: Супермикро</h3>
                     <p className="text-muted-foreground">
-                      В 3 часа ночи все сайты упали. Причина: автообновление Windows. С тех пор мы на Linux. 
-                      Правда, forget sudo пароль — отдельная история.
+                      Переезд на Supermicro 2011 года выпуска. Но с важным апгрейдом — прошивка BIOS от 2017 года. 
+                      Всё так же под столом. Всё так же в рабочем состоянии.
                     </p>
                   </div>
                 </div>
@@ -176,10 +176,10 @@ const Index = () => {
                     <span className="text-2xl">🚀</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-xl mb-2">Сегодня: Облака и мечты</h3>
+                    <h3 className="font-bold text-xl mb-2">Сегодня: Всё там же</h3>
                     <p className="text-muted-foreground">
-                      Переехали в облако. Terraform пишем в notepad++. Мониторинг — телеграм-бот с эмодзи. 
-                      Но зато честно, дёшево и со вкусом приключений.
+                      Никаких облаков. Сервер по-прежнему под столом. Мониторинг — телеграм-бот. 
+                      Но зато честно, дёшево и с гарантией отсутствия гарантий.
                     </p>
                   </div>
                 </div>
@@ -189,7 +189,7 @@ const Index = () => {
 
           <div className="mt-12 p-6 border-2 border-dashed border-primary/30 rounded-lg bg-primary/5">
             <p className="text-center text-lg">
-              <span className="font-bold text-primary">X-TLD</span> — лаборатория доменов, DNS и безумия. 
+              <span className="font-bold text-primary">XTLD.RU</span> — лаборатория доменов, DNS и безумия. 
               <br className="hidden md:block" />
               Хостинг, где X — это неизвестная стабильность.
             </p>
@@ -297,7 +297,7 @@ const Index = () => {
       <footer className="border-t border-border py-8 px-4">
         <div className="container mx-auto text-center">
           <p className="text-sm text-muted-foreground mb-2">
-            © 2024 X-TLD.RU — хостинг из говна и палок
+            © 2024 XTLD.RU — хостинг под столом
           </p>
           <p className="text-xs text-muted-foreground">
             Сделано с любовью, болью и Stack Overflow
