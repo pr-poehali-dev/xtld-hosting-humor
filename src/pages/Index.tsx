@@ -100,8 +100,8 @@ const Index = () => {
             <Card className="border-primary/30 bg-card/50">
               <CardContent className="pt-6">
                 <Icon name="Activity" size={32} className="text-primary mb-4 mx-auto" />
-                <h3 className="font-bold text-lg mb-2">Честный мониторинг</h3>
-                <p className="text-sm text-muted-foreground">Покажем всё. Даже когда стыдно.</p>
+                <h3 className="font-bold text-lg mb-2">Мониторинг скоро</h3>
+                <p className="text-sm text-muted-foreground">Внедряем. Когда-нибудь.</p>
               </CardContent>
             </Card>
           </div>
@@ -206,89 +206,47 @@ const Index = () => {
             <p className="text-xl text-muted-foreground">Если осмелитесь доверить нам свой проект</p>
           </div>
 
-          <Card className="bg-card/50">
-            <CardContent className="pt-6">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-semibold mb-2">
-                    Ваше имя
-                  </label>
-                  <Input
-                    id="name"
-                    type="text"
-                    placeholder="Иван Иванович"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    required
-                    className="bg-background"
-                  />
+          <div className="text-center space-y-8">
+            <div className="p-4 border border-destructive/50 rounded-lg bg-destructive/10 inline-block">
+              <div className="flex gap-2 items-start">
+                <Icon name="AlertTriangle" size={20} className="text-destructive flex-shrink-0 mt-0.5" />
+                <div className="text-left">
+                  <p className="font-semibold text-destructive text-sm">Дисклеймер</p>
+                  <p className="text-xs text-muted-foreground mt-1">
+                    Отвечаем когда можем. Если сервер не упал.
+                  </p>
                 </div>
+              </div>
+            </div>
 
-                <div>
-                  <label htmlFor="email" className="block text-sm font-semibold mb-2">
-                    Email
-                  </label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="ivan@example.com"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    required
-                    className="bg-background"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-semibold mb-2">
-                    Сообщение
-                  </label>
-                  <Textarea
-                    id="message"
-                    placeholder="Расскажите о вашем проекте..."
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    required
-                    className="bg-background min-h-32"
-                  />
-                </div>
-
-                <div className="p-4 border border-destructive/50 rounded bg-destructive/10">
-                  <div className="flex gap-2 mb-2">
-                    <Icon name="AlertTriangle" size={20} className="text-destructive flex-shrink-0 mt-0.5" />
-                    <div>
-                      <p className="font-semibold text-destructive text-sm">Дисклеймер</p>
-                      <p className="text-xs text-muted-foreground mt-1">
-                        Отправляя форму, вы соглашаетесь с тем, что мы можем ответить через неделю. Или не ответить вообще, 
-                        если сервер упадёт. Но мы очень стараемся!
-                      </p>
+            <div className="space-y-6">
+              <Card className="bg-card/50 hover:border-primary/50 transition-colors">
+                <CardContent className="pt-6">
+                  <a href="https://t.me/xtld" className="flex items-center justify-center gap-4 group">
+                    <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+                      <Icon name="Send" size={24} className="text-primary" />
                     </div>
-                  </div>
-                </div>
+                    <div className="text-left">
+                      <p className="font-bold text-lg">Telegram</p>
+                      <p className="text-muted-foreground">@xtld</p>
+                    </div>
+                  </a>
+                </CardContent>
+              </Card>
 
-                <Button 
-                  type="submit" 
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold"
-                  size="lg"
-                >
-                  <Icon name="Send" size={20} className="mr-2" />
-                  Отправить в неизвестность
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
-
-          <div className="mt-12 text-center space-y-4">
-            <p className="text-muted-foreground">Или пишите напрямую:</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href="mailto:support@xtld.ru" className="flex items-center gap-2 text-primary hover:underline">
-                <Icon name="Mail" size={20} />
-                support@xtld.ru
-              </a>
-              <a href="https://t.me/xtld" className="flex items-center gap-2 text-primary hover:underline">
-                <Icon name="Send" size={20} />
-                @xtld
-              </a>
+              <Card className="bg-card/50 hover:border-primary/50 transition-colors">
+                <CardContent className="pt-6">
+                  <a href="mailto:support@xtld.ru" className="flex items-center justify-center gap-4 group">
+                    <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+                      <Icon name="Mail" size={24} className="text-primary" />
+                    </div>
+                    <div className="text-left">
+                      <p className="font-bold text-lg">Email</p>
+                      <p className="text-muted-foreground">support@xtld.ru</p>
+                    </div>
+                  </a>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
